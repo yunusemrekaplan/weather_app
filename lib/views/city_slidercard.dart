@@ -39,7 +39,6 @@ class _CitySliderCardState extends State<CitySliderCardScreen> {
       Map resultBody = jsonDecode(data.body);
       if (resultBody['success'] == true) {
         setState(() {
-          //ankaraCity = resultBody['city'];
           Iterable result = resultBody['result'];
           weatherCityList = result.map((weatherData) {
             City city = City(name: cityName);
