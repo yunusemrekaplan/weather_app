@@ -16,7 +16,7 @@ class _MainScreenState extends State<MainScreen> with MainSetting {
   void initState() {
     Future.delayed(
       const Duration(
-        seconds: 4,
+        seconds: 3,
       ),
       () {
         Navigator.pushAndRemoveUntil(
@@ -129,7 +129,6 @@ class _MainScreenState extends State<MainScreen> with MainSetting {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          // icon
           const Icon(
             Icons.favorite,
             color: Colors.redAccent,
@@ -138,7 +137,6 @@ class _MainScreenState extends State<MainScreen> with MainSetting {
           const SizedBox(
             width: 5,
           ),
-          // text
           GestureDetector(
             onTap: () {
               _launchUrl();
